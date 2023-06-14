@@ -3,35 +3,40 @@
 @{
     ViewData["Title"] = "Home";
 }
+
 <div class="container-fluid">
-    <div class="position-absolute top-50 start-50 translate-middle">
-        <div class="col-md-4">
-            <form>
-                <div class="row pb-3">
-                    <div class="col-md-6">
-                        <label for="usuario" class="col-form-label">Usuário</label>
+    <div class="position-absolute top-50 start-50 translate-middle custom-container">
+        <form>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row pb-3">
+                        <div class="col-md-2">
+                            <label for="usuario" class="col-form-label">Usuário</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input  type="text" id="usuario" class="form-control" aria-labelledby="passwordHelpInline">
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <input style="width : 300px" type="text" id="usuario" class="form-control" aria-labelledby="passwordHelpInline">
+                    <div class="row pb-3">
+                        <div class="col-md-2">
+                            <label for="inputPassword6" class="col-form-label">Senha</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="password" id="inputPassword6" class="form-control" aria-labelledby="passwordHelpInline">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-10 ">
+                            <button style="width: 110px" type="button" class="btn  btn-custom btn-primary">Login</button>
+                            <button style="width: 110px; float:right;" type="button" class="btn btn-primary">Cancelar</button>
+                        </div>                     
                     </div>
                 </div>
-                <div class="row pb-3">
-                    <div class="col-md-6">
-                        <label for="inputPassword6" class="col-form-label">Senha</label>
-                    </div>
-                    <div class="col-md-6">
-                        <input style="width: 300px" type="password" id="inputPassword6" class="form-control" aria-labelledby="passwordHelpInline">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 pb-2">
-                        <button  type="button" class="btn btn-primary">Login</button>
-                    </div>
-                    <div class="col-md-6">
-                        <button type="button" class="btn btn-primary">Cancelar</button>
-                    </div>
-                </div>
-            </form>
-        </div>
+            </div>
+          
+        </form>
+
     </div>
 </div>
+

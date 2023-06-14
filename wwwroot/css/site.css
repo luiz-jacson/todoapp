@@ -20,3 +20,18 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.custom-container {
+    width: 47% !important;
+}
+
+@media (min-width: 800px) {
+    .custom-container {
+        width: 20% !important;
+    }
+}
+
+.btn-custom {
+    border: 0;
+}
+
