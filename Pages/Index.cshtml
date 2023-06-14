@@ -1,10 +1,37 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container-fluid">
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="col-md-4">
+            <form>
+                <div class="row pb-3">
+                    <div class="col-md-6">
+                        <label for="usuario" class="col-form-label">Usuário</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input style="width : 300px" type="text" id="usuario" class="form-control" aria-labelledby="passwordHelpInline">
+                    </div>
+                </div>
+                <div class="row pb-3">
+                    <div class="col-md-6">
+                        <label for="inputPassword6" class="col-form-label">Senha</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input style="width: 300px" type="password" id="inputPassword6" class="form-control" aria-labelledby="passwordHelpInline">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 pb-2">
+                        <button  type="button" class="btn btn-primary">Login</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-primary">Cancelar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
